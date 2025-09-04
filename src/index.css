@@ -5,27 +5,33 @@
 :root{
   --bg-color: #F9FAFB;
   --text-color: #111827;
-  --accent-color: #18A999;
+  --accent-color: #148D80;
 }
 
 body{
   background-color: var(--bg-color);
   margin: 0;
   padding: 0;
+  color: var(--text-color);
+  height: 100vh;
 }
 h1, h2, .btn{
   font-family: montserrat;
-  color: var(--text-color)
 }
 .btn{
   color: var(--bg-color);
+  background-image: linear-gradient(60deg, #148D80, #18A999);
+  line-height: 100%;
 }
 p, a{
   font-family: inter;
-  color: var(--text-color);
 }
 .note-text{
   font-family: 'Fira Code';
+}
+.hamburgerLine{
+  @apply w-8 h-1 rounded;
+  background-color: var(--text-color)
 }
 
 @import "tailwindcss";
