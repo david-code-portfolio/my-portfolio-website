@@ -6,6 +6,7 @@
   --bg-color: #F9FAFB;
   --text-color: #111827;
   --accent-color: #148D80;
+  --grey-color: #F4F4F4;
 }
 
 body{
@@ -26,12 +27,19 @@ h1, h2, h3, .btn{
 p, a{
   font-family: inter;
 }
+p{
+  opacity: .6;
+}
 .note-text{
   font-family: 'Fira Code';
 }
 .hamburgerLine{
   @apply w-8 h-1 rounded;
   background-color: var(--text-color)
+}
+.serviceNumber{
+  font-family: montserrat;
+  opacity: .25
 }
 
 @import "tailwindcss";
