@@ -1,8 +1,8 @@
 function CtaBtn({text, style}){
     return(
-        <a href="#" className={`${style} btn capitalize font-bold w-fit rounded-lg py-4 px-8 duration-200 hover:opacity-75`}>
+        <button className={`${style} btn capitalize font-bold w-fit rounded-lg py-4 px-8 duration-200 hover:opacity-75 cursor-pointer max-sm:w-full`}>
             {text}
-        </a>
+        </button>
     )
 }
 export default CtaBtn;

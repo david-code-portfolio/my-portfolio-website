@@ -4,7 +4,7 @@ import HamburgerMenu from "./components/HamburgerMenu";
 
 function Navbar(){
     return (
-        <section className="grid grid-cols-[1fr_2fr_1fr] max-lg:grid-cols-[2fr_1fr] items-center py-5 px-32 max-xl:px-16 max-sm:px-4 shadow-[0_0_16px_rgba(0,0,0,0.25)] max-w-[2400px] m-auto sticky">
+        <section className="grid grid-cols-[1fr_2fr_1fr] max-lg:grid-cols-[2fr_1fr] items-center py-5 px-32 max-xl:px-16 max-sm:px-4 shadow-[0_0_16px_rgba(0,0,0,0.25)] max-w-[2400px] w-full justify-self-center fixed z-20 bg-[var(--bg-color)]">
             <h2 className="note-text uppercase text-[var(--accent-color)] font-semibold text-2xl max-md:text-xl cursor-default w-fit">
                 David Code
             </h2>

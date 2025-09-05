@@ -13,15 +13,15 @@ body{
   margin: 0;
   padding: 0;
   color: var(--text-color);
-  height: 100vh;
+  display: grid;
 }
-h1, h2, .btn{
+h1, h2, h3, .btn{
   font-family: montserrat;
 }
 .btn{
   color: var(--bg-color);
   background-image: linear-gradient(60deg, #148D80, #18A999);
-  line-height: 100%;
+  line-height: 125%;
 }
 p, a{
   font-family: inter;
