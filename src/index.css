@@ -29,6 +29,7 @@ p, a{
 }
 p{
   opacity: .6;
+  line-height: 150%;
 }
 .note-text{
   font-family: 'Fira Code';

@@ -3,7 +3,7 @@ import CtaBtn from "./components/CtaBtn";
 
 function Services(){
     return(
-        <section className="px-32 mt-64 grid w-full max-w-[2400px] justify-self-center max-xl:px-16 max-sm:px-4">
+        <section className="px-32 mt-64 max-sm:mt-32 grid w-full max-w-[2400px] justify-self-center max-xl:px-16 max-sm:px-4">
             <h2 className="uppercase font-bold text-5xl max-sm:text-2xl">
                 {"Web solutions </>"}
             </h2>
