@@ -6,7 +6,7 @@ import Contact_Img from "./assets/Images/Contact_img.png";
 
 function Contact(){
     return(
-        <section className="grid grid-cols-[max-content_1fr] max-lg:grid-cols-1 px-32 mt-64 max-sm:mt-32 w-full max-w-[2400px] justify-self-center relative max-xl:px-16 max-lg:gap-16 max-sm:px-8">
+        <section id="contact" className="grid grid-cols-[max-content_1fr] max-lg:grid-cols-1 px-32 mt-64 max-sm:mt-32 w-full max-w-[2400px] justify-self-center relative max-xl:px-16 max-lg:gap-16 max-sm:px-8">
             <div className="w-[650px] max-lg:w-full">
                 <h2 className="uppercase font-bold text-5xl max-sm:text-2xl">
                     Ready to Get Started? <br />

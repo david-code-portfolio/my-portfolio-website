@@ -15,8 +15,6 @@ body{
   padding: 0;
   color: var(--text-color);
   display: grid;
-
-  padding-bottom: 128px;
 }
 h1, h2, h3, .btn{
   font-family: montserrat;
@@ -35,6 +33,7 @@ p{
 }
 .note-text{
   font-family: 'Fira Code';
+  opacity: 1;
 }
 .hamburgerLine{
   @apply w-8 h-1 rounded;

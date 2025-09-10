@@ -12,6 +12,7 @@ function App() {
       <Services />
       <About />
       <Contact />
+      <p className="note-text justify-self-center mt-32 mb-4 max-sm:text-xs text-center">Built with ❤️ using React & Tailwind CSS.</p>
     </>
   )
 }
