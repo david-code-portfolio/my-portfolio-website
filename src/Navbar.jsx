@@ -15,6 +15,13 @@ function Navbar(){
             </nav>
             <CtaBtn text='get in touch' style='justify-self-end max-lg:hidden'/>
             <HamburgerMenu />
+
+            <div className="my-16 grid col-span-2 gap-8 justify-items-center">
+                <Navlink text="home" location="home" style="w-fit"/>
+                <Navlink text="services" location="services" style="w-fit"/>
+                <Navlink text="about" location="about" style="w-fit"/>
+                <CtaBtn text="get in touch" style="mt-16"/>
+            </div>
         </section>
     )
 }
