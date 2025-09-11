@@ -1,4 +1,4 @@
-function Navlink({location, text, style}){
+function Navlink({location, text, style, onClick}){
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if(section){
@@ -7,8 +7,15 @@ function Navlink({location, text, style}){
             window.scrollTo({top: yPosition, behavior: 'smooth'})
         }
     }
+    const handleClick = () => {
+        scrollToSection(location)
+        if(onClick){
+            onClick()
+        }
+    }
+
     return(
-        <button onClick={() => scrollToSection(location)}
+        <button onClick={handleClick}
             className={`${style} capitalize font-semibold text-xl h-fit duration-200 hover:text-[var(--accent-color)] cursor-pointer`}>
             {text}
         </button>
