@@ -21,21 +21,24 @@ function Contact(){
                         <img src={Gmail_Icon} alt="Gmail Icon" className="w-6 h-6"/>
                         <p className="contactText max-sm:text-[1rem]">ksendzulak.biz@gmail.com</p>
                     </a>
-                    <a href="https://www.linkedin.com/in/david-ksendzulak-869335356/" className="flex gap-2 w-fit items-center">
+                    <a href="https://www.linkedin.com/in/david-ksendzulak-869335356/" 
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        className="flex gap-2 w-fit items-center">
                         <img src={LinkedIn_Icon} alt="LinkedIn Icon" className="w-6 h-6"/>
-                        <p className="contactText max-sm:text-[1rem]">@david_linkedin</p>
+                        <p className="contactText max-sm:text-[1rem]">David Ksendzulak</p>
                     </a>
                 </div>
                 <div className="mt-16 flex-col flex gap-2 max-sm:hidden">
                     <p className="italic max-sm:text-center">*In case you’d prefer an extra security</p>
-                    <CtaBtn text="Hire Me on UpWork" svg={<UpWorkIcon className="relative top-0.25"/>} style="flex gap-2 items-center justify-center"></CtaBtn>
+                    <CtaBtn href="https://www.upwork.com/freelancers/~013e7d3f8de2dcb082?mp_source=share" text="Hire Me on UpWork" svg={<UpWorkIcon className="relative top-0.25"/>} style="flex gap-2 items-center justify-center"></CtaBtn>
                 </div>
             </div>
             <img src={Contact_Img} alt="Contact Illustration" 
                 className="absolute -z-10 top-8 right-32 w-[1050px] max-[1920px]:w-[50vw] max-2xl:w-[640px] max-2xl:top-48 max-xl:right-16 max-lg:relative max-lg:right-0 max-lg:top-0 max-lg:justify-self-center max-lg:w-full"/>
             <div className="flex-col flex gap-2 min-sm:hidden">
                 <p className="italic max-sm:text-center text-xs">*In case you’d prefer an extra security</p>
-                <CtaBtn text="Hire Me on UpWork" svg={<UpWorkIcon className="relative top-0.25"/>} style="flex gap-2 items-center justify-center"></CtaBtn>
+                <CtaBtn href="https://www.upwork.com/freelancers/~013e7d3f8de2dcb082?mp_source=share" text="Hire Me on UpWork" svg={<UpWorkIcon className="relative top-0.25"/>} style="flex gap-2 items-center justify-center"></CtaBtn>
             </div>
         </section>
     )

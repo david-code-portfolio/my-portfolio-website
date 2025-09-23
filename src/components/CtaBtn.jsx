@@ -1,4 +1,4 @@
-function CtaBtn({text, style, svg, onClick}){
+function CtaBtn({text, style, svg, onClick, href}){
     const scrollToContact = (id) => {
         const section = document.getElementById(id);
         if(section){
@@ -13,11 +13,24 @@ function CtaBtn({text, style, svg, onClick}){
             onClick()
         }
     }
-    return(
-        <button onClick={handleClick}
-            className={`${style} btn capitalize font-bold w-fit rounded-lg py-4 px-8 duration-200 hover:opacity-75 cursor-pointer max-sm:w-full`}>
-            {svg}{text}
-        </button>
-    )
+
+    if (href){
+        return(
+            <a href={href}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={`${style} btn capitalize font-bold w-fit rounded-lg py-4 px-8 duration-200 hover:opacity-75 cursor-pointer max-sm:w-full flex gap-2 items-center justify-center`}>
+                {svg}{text}
+            </a>
+        )
+    }
+    else{
+        return(
+            <button onClick={handleClick}
+                className={`${style} btn capitalize font-bold w-fit rounded-lg py-4 px-8 duration-200 hover:opacity-75 cursor-pointer max-sm:w-full`}>
+                {svg}{text}
+            </button>
+        )
+    } 
 }
 export default CtaBtn;

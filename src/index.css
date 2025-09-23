@@ -9,6 +9,11 @@
   --grey-color: #F4F4F4;
 }
 
+::selection{
+  background-color: #18A999;
+  color: var(--bg-color);
+}
+
 body{
   background-color: var(--bg-color);
   margin: 0;
@@ -36,7 +41,7 @@ p{
   opacity: 1;
 }
 .hamburgerLine{
-  @apply w-8 h-1 rounded;
+  @apply w-8 h-1 rounded duration-200;
   background-color: var(--text-color)
 }
 .serviceNumber{

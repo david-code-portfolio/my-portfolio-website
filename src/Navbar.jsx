@@ -25,7 +25,7 @@ function Navbar(){
                     <Navlink location='about' text='about me'/>
                 </nav>
                 <CtaBtn text='get in touch' style='justify-self-end max-lg:hidden'/>
-                <BurgerMenuBtn onClick={toggleBurgerMenu}/>
+                <BurgerMenuBtn onClick={toggleBurgerMenu} menuState={burgerMenuState}/>
 
                 <div className={`my-16 grid col-span-2 gap-8 justify-items-center overflow-y-auto ${burgerMenuState ? '' : 'hidden'}`}>
                     <Navlink text="home" location="home" style="w-fit" onClick={toggleBurgerMenu}/>
